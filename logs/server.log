@@ -3,9 +3,55 @@
 > vite
 
 
-  VITE v5.4.20  ready in 198 ms
+  VITE v5.4.20  ready in 200 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.20.75.137:3000/
-11:54:42 AM [vite] ✨ new dependencies optimized: framer-motion
-11:54:42 AM [vite] ✨ optimized dependencies changed. reloading
+12:03:29 PM [vite] Pre-transform error: Transform failed with 1 error:
+/home/workspace/src/components/Products.jsx:26:20: ERROR: Expected ")" but found "as"
+12:03:31 PM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/Products.jsx:26:20: ERROR: Expected ")" but found "as"
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/Products.jsx:26:20
+  
+  Expected ")" but found "as"
+  24 |          setItems(data.items || []);
+  25 |        } catch (e) {
+  26 |          setError((e as Error).message);
+     |                      ^
+  27 |        } finally {
+  28 |          setLoading(false);
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+12:03:49 PM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/components/Products.jsx:26:20: ERROR: Expected ")" but found "as"
+  Plugin: vite:esbuild
+  File: /home/workspace/src/components/Products.jsx:26:20
+  
+  Expected ")" but found "as"
+  24 |          setItems(data.items || []);
+  25 |        } catch (e) {
+  26 |          setError((e as Error).message);
+     |                      ^
+  27 |        } finally {
+  28 |          setLoading(false);
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
